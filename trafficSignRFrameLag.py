@@ -11,7 +11,7 @@ import cv2
 tf.get_logger().setLevel('ERROR')
 logging.set_verbosity(logging.ERROR)
 
-# labels need to be read and not hard-coded
+# labels to classify data
 CLASSES = ['trafficlight', 'stop', 'speedlimit','crosswalk']
 COLORS = np.random.randint(0, 255, size=(len(CLASSES), 3))
 
