@@ -12,15 +12,7 @@ tf.get_logger().setLevel('ERROR')
 logging.set_verbosity(logging.ERROR)
 
 # labels need to be read and not hard-coded
-CLASSES = [
-        'Road Work'
-        ,'Pedestrian Crossing'
-        ,'Bicycle Crossing'
-        ,'Stop Sign'
-        ,'Traffic Sign - Red'
-        ,'Traffic Sign - Green'
-        ,'Traffic Sign - Yellow'
-    ]
+CLASSES = ['trafficlight', 'stop', 'speedlimit','crosswalk']
 COLORS = np.random.randint(0, 255, size=(len(CLASSES), 3))
 
 _OUTPUT_LOCATION = 'location'
