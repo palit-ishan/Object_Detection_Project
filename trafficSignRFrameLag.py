@@ -74,6 +74,7 @@ if __name__ == "__main__":
     resize_dim = (input_details[0]['shape'][2], input_details[0]['shape'][1])
     input_data_type = input_details[0]['dtype']
 
+    #Code to switch on video feed from camera
     print('[INFO] Starting video stream ...')
     vs = VideoStream(src=0).start()
     time.sleep(2.0)
@@ -117,6 +118,7 @@ if __name__ == "__main__":
         cv2.imshow("Frame", frame)
         key = cv2.waitKey(1) & 0xFF
         
+        # code to stop video stream
         if key == ord("q"):
             break
         fps.update()
