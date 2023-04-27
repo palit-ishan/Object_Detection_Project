@@ -1,3 +1,6 @@
-# Object_Detection_Project
+# Traffic and Road Signs Object Detection Project
 
-Project to detect road signs and traffic signals and identify/classify them.
+Object detection is a computer vision task that involves identifying and localizing objects of interest in an image or video. The goal is to accurately identify the presence, location, and class of objects in an image. Object detection is an important task in various applications such as self-driving cars, security systems, and medical imaging. It involves several sub-tasks, including image preprocessing, object proposal generation, feature extraction, classification, and localization.
+There are several popular deep learning-based approaches to object detection, such as Faster R-CNN, YOLO, and SSD. These methods use convolutional neural networks (CNNs) to extract features from images and then apply additional layers to detect objects. Object detection has significantly improved in recent years due to the advancements in deep learning and the availability of large-scale annotated datasets. The detection of road signs using object detection techniques is an important application of computer vision and has significant practical implications for autonomous driving systems, driver assistance technologies, and intelligent transportation systems.
+
+In the project our aim is to detect road signs from a live video feed as well as still images and classify them into 4 categories - 'trafficlight', 'stop', 'speedlimit' and 'crosswalk'. We are using TFLite based Deep Learning model for the detection and classification task.
